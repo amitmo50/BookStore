@@ -5,6 +5,7 @@ class Book {
     this.isbn = isbn;
   }
 }
+// UI Class
 class UI {
   addBookToList(book){
     const list = document.getElementById('book-list');
