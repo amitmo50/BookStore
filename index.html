@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #001f3f"
+;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha256-2YQRJMXD7pIAPHiXr0s+vlRWA7GYJEK0ARns7k2sbHY=" crossorigin="anonymous" />
+  <style>
+    .success, .error {
+      color: aliceblue;
+      padding: 5px;
+      margin: 5px;
+      margin: 5px 0 15px 0;
+    }
+    .success {
+      background: #2ECC40
+;
+    }
+    .error{
+      background: #FF4136;
+    }
+  </style>
+  <title >BookStore</title>
+</head>
+<body>
+  <div class="container" style="background-color: #001f3f">
+    <h1 style="color:aliceblue"><b>Add Book</b></h1>
+    <form id="book-form">
+      <div>
+        <label for="title" style="color:aliceblue">Book Title</label>
+        <input type="text" class="u-full-width" id="title">
+      </div>
+      <div>
+        <label for="title" style="color:aliceblue">Author</label>
+        <input type="text" id="author" class="u-full-width">
+      </div>
+      <div>
+        <label for="title" style="color:aliceblue">ISBN#</label>
+        <input type="text" id="isbn" class="u-full-width">
+      </div>
+      <div>
+        <input type="submit" id="submit" value="Submit" class="u-full-width" style="background-color:#7FDBFF
+        ">
+      </div>
+    </form>
+    <hr>
+      <table class="u-full-width">
+        <thead>
+          <tr>
+            <th style="text-align:center;color:aliceblue">Title</th>
+            <th style="text-align:center;color:aliceblue">Auther</th>
+            <th style="text-align:center;color:aliceblue">ISBN</th>
+            <th style="text-align:center;color:aliceblue"></th>
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+  </div>
+  
+  <script src="appes6.js"></script>
+</body>
+</html>
